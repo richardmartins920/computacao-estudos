@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raciocínio Logico</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Voltar para Home</a>
+        <a href="raciocinio.html">Raciocínio Lógico</a>
+        <a href="algoritmos.html">Algoritmos</a>
+        <a href="web.html">Desenvolvimento Web</a>
+        <a href="portugues.html">Produção e Interpretação de Textos</a>
+        <a href="filosofia.html">Filosofia e Cidadania</a>
+    </nav>
+
+    <div class="container">
+        <h1>Raciocínio Lógico - 1º Período</h1>
+
+        <h2>O Que é Raciocínio Lógico?</h2>
+        <p>O raciocínio lógico é a capacidade de pensar de forma estruturada e coerente, utilizando regras e princípios
+            para chegar a conclusões válidas. Ele é fundamental para a resolução de problemas, tomada de decisões e
+            desenvolvimento de habilidades analíticas.</p>
+
+        <h2>Conteudo do Raciocínio Lógico</h2>
+        <ul>
+            <li>Proposições</li>
+            <li>Variável Lógica</li>
+            <li>Conjunção e disjunção</li>
+            <li>ou exclusivo</li>
+            <li>Tabela Verdade</li>
+        </ul>
+
+        <h2>Proposições</h2>
+
+        <h3>Conjunções</h3>
+        <p>A <b>conjunção</b> representa a ideia de <b>"E".</b></p>
+        <p>O Símbolo da conjunção é <b>∧</b></p>
+        <p>Ela só é verdadeira quando <b>as duas proposições forem verdadeiras</b></p>
+
+        <h4>Exemplo</h4>
+        <p>p = "Eu estudei"</p>
+        <p>q = "Eu fiz a prova"</p>
+
+        <h3>Significa</h3>
+        <p>p ∧ q = "Eu estudei <b>E</b> fiz a prova"</p>
+        <pre>
+            <code>
+                Verdadeiro = se duas forem verdadeiras
+                Falso = se uma for falsa
+            </code>
+        </pre>
+
+        <h2>Tabela Verdade da Conjunção</h2>
+        <table border="1">
+            <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>p ∧ q</th>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+        </table>
+
+        <h3>Disjunções</h3>
+        <p>A <b>disjunção</b> representa o <b>OU normal.</b></p>
+        <p>O Símbolo da disjunção é <b>∨</b></p>
+        <p>Ela é verdadeira quando <b>pelo menos uma condição é verdadeira.</b></p>
+
+        <h4>Exemplo</h4>
+        <p>p = "Vou estudar"</p>
+        <p>q = "Vou jogar"</p>
+
+        <h2>Significa</h2>
+        <p>p ∨ q </p>
+
+        <pre>
+            <code>
+                Vou estudar <b>OU</b> jogar
+            </code>
+        </pre>
+
+        <p><b>Verdadeiro</b> = se uma ou as duas forem verdadeiras</p>
+        <p><b>Falso</b> = só quando as duas forem falsas</p>
+
+        <h2>Tabela Verdade da Disjunção</h2>
+        <table border="1">
+            <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>p ∨ q</th>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+        </table>
+
+        <h2>Ou exclusivo (XOR)</h2>
+        <p>O <b>ou exlusivo</b> significa</p>
+
+        <pre>
+            <code>
+                um OU outro, mas NÃO os dois
+            </code>
+        </pre>
+
+        <p>Símbolo: <b>⊕</b></p>
+
+        <h4>Exemplo</h4>
+        <p>p = "Vou assistir filme"</p>
+        <p>q = "Vou jogar"</p>
+
+        <pre>
+            <code>
+                p ⊕ q 
+            </code>
+        </pre>
+
+        <h2>Significa:</h2>
+
+        <pre>
+            <code>
+                Fazer uma opção.
+            </code>
+        </pre>
+
+        <p><b>Verdadeiro</b> = quando só uma for verdadeira</p>
+        <p><b>Falso</b> = quando forem iguais</p>
+
+        <h2>Tabela Verdade do Ou Exclusivo</h2>
+        <table border="1">
+            <tr>
+                <th>p</th>
+                <th>q</th>
+                <th>p ⊕ q</th>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>V</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>F</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>V</td>
+                <td>V</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
