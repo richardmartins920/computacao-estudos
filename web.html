@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Web</title>
+</head>
+
+<h3>
+    <nav>
+        <a href="index.html">Voltar para Home</a>
+        <a href="raciocinio.html">Raciocínio Lógico</a>
+        <a href="algoritmos.html">Algoritmos</a>
+        <a href="web.html">Desenvolvimento Web</a>
+        <a href="portugues.html">Produção e Interpretação de Textos</a>
+        <a href="filosofia.html">Filosofia e Cidadania</a>
+    </nav>
+
+    <div class="container">
+        <h1>Desenvolvimento Web</h1>
+        <p>Desenvolvimento Web é a área do computador responsável por criar sites e aplicações que rodam em navegadores
+            web
+            (Chrome, Firefox, Edge, etc.).</p>
+        <p>Ela envolve 3 partes principais:</p>
+        <ul>
+            <li><b>HTML</b> → Estrutura do site</li>
+            <li><b>CSS</b> → aparência (visual)</li>
+            <li><b>JavaScript</b> → interatividade (ações e lógica)</li>
+        </ul>
+
+        <h2>HTML - O que é e para que serve?</h2>
+        <p><b>HTML (HyperText Markup Language)</b> é a linguagem usada para criar a estrutura de uma página.</p>
+        <p>Com HTML você define:</p>
+        <ul>
+            <li>títulos</li>
+            <li>parágrafos</li>
+            <li>listas</li>
+            <li>links</li>
+            <li>imagens</li>
+            <li>divisões/seções do site</li>
+        </ul>
+
+        <h3>Principais tags HTML (1 período) e o que fazem</h3>
+        <p>&lt;h1&gt; até &lt;h6&gt; - Títulos</p>
+        <p>Sao títulos e subtítulos</p>
+        <p>O &lt;h1&gt; é o titulo mais importante e o &lt;h6&gt; o menos importante</p>
+        <ul>
+            <li>&lt;h1&gt; → título principal</li>
+            <li>&lt;h2&gt; → seção principal</li>
+            <li>&lt;h3&gt; → subtítulo dentro de uma seção</li>
+            <li>&lt;h4&gt; → subtitulo menos ainda</li>
+            <li>&lt;h5&gt;/ &lt;h6&gt; → detalhes ainda menores</li>
+        </ul>
+
+        <h3>Exemplos:</h3>
+
+        <code>
+        <pre>
+            &lt;h1&gt;Desenvolvimento Web&lt;/h1&gt;
+            &lt;h2&gt;HTML&lt;/h2&gt;
+            &lt;h3&gt;Principais Tags&lt;/h3&gt;
+        </pre>
+    </code>
+
+        <h3>&lt;p&gt; - Parágrafo</h3>
+        <p>Cria um parágrafo de texto comum.</p>
+
+        <h3>Exemplo:</h3>
+        <code>
+        <pre>
+            &lt;p&gt;HTML é usado para organizar o conteúdo de uma página web.&lt;/p&gt;
+        </pre>
+    </code>
+
+        <h3>&lt;br&gt; - Quebra de linha</h3>
+        <p>Quebra a linha dentro do texto.</p>
+        <p>(É uma tag "sem fechamento", ou seja, não precisa de fechamento)</p>
+        <h3>Exemplo:</h3>
+        <code>
+        <pre>
+            &lt;p&gt;Primeira linha.&lt;br&gt;Segunda linha.&lt;/p&gt;
+        </pre>
+    </code>
+
+        <h3>&lt;b&gt; e &lt;strong&gt; - Negrito/Destaques</h3>
+        <ul>
+            <li>&lt;b&gt; → deixa em negrito (visual)</li>
+            <li>&lt;strong&gt; → destaque importante (semântica, significado)</li>
+        </ul>
+
+        <h3>Exemplo:</h3>
+        <code>
+        <pre>
+            &lt;p&gt;&lt;strong&gt;Importante:&lt;/strong&gt; estude lógica primeiro.&lt;/p&gt;
+        </pre>
+    </code>
+
+        <h3></h3>&lt;i&gt; e &lt;em&gt; - Itálico/Ênfase
+</h3>
+<ul>
+    <li>&lt;i&gt; → itálico visual</li>
+    <li>&lt;em&gt; → ênfase (semântica)</li>
+</ul>
+
+<h3>Exemplo:</h3>
+<code>
+        <pre>
+            &lt;p&gt;Isso é &lt;em&gt; muito &lt;/em&gt; importante&lt;/p&gt;
+        </pre>
+    </code>
+
+<h3>&lt;a&gt; - Link</h3>
+<p>Cria um link para outra página ou site.</p>
+
+<h3>Exemplo (página do seu site):</h3>
+<code>
+        <pre>
+            &lt;a href="raciocinio.html"&gt;Raciocínio Lógico&lt;/a&gt;
+        </pre>
+    </code>
+
+<h3>Exemplo (site externo):</h3>
+<code>
+        <pre>
+            &lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;
+        </pre>
+    </code>
+
+<h3>&lt;img&gt; - Imagem</h3>
+<p>Mostra imagem na página.</p>
+
+<h3>Exemplo:</h3>
+<code>
+        <pre>
+            &lt;img src="foto.png" alt="Descrição da imagem"&gt;
+        </pre>
+    </code>
+
+<h3>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; - Listas</h3>
+
+<h3>Exemplo:</h3>
+<ul>
+    <li>&lt;ul&gt; → lista não ordenada (bolinhas)</li>
+    <li>&lt;ol&gt; → lista ordenada (numerada)</li>
+    <li>&lt;li&gt; → item da lista</li>
+</ul>
+
+<h3>&lt;div&gt; - "Caixa" genérica (organizazção)</h3>
+<p>É uma divisão usada para organizar conteúdo em blocos.</p>
+
+<h3>Exemplo:</h3>
+<code>
+        <pre>
+            &lt;div class="container"&gt;
+                &lt;h2&gt;Conteúdo aqui&lt;/h2&gt;
+                &lt;p&gt;Texto dentro da div.&lt;/p&gt;
+            &lt;/div&gt;
+        </pre>
+    </code>
+
+<h3>&lt;nav&gt; - Área de navegação</h3>
+<p>Representa a área do menu e links principais do site.</p>
+
+<h3>Exemplo:</h3>
+<code>
+        <pre>
+            &lt;nav&gt;
+                &lt;a href="index.html"&gt;Home&lt;/a&gt;
+                &lt;a href="raciocinio.html"&gt;Raciocínio Lógico&lt;/a&gt;
+            &lt;/nav&gt;
+        </pre>
+    </code>
+
+<h3>&lt;header&gt; e &lt;footer&gt; - Cabeçalho e Rodapé</h3>
+
+<ul>
+    <li>&lt;header&gt; → parte de cima (título, menu)</li>
+    <li>&lt;footer&gt; → rodapé (autor, ano, contato)</li>
+</ul>
+
+<h3>Exemplo:</h3>
+<code>
+            <pre>
+                &lt;header&gt;
+                    &lt;h1&gt;Meu Site&lt;/h1&gt;
+                &lt;/header&gt;
+                &lt;footer&gt;
+                    &lt;p&gt;© 2024 Meu Site. Todos os direitos reservados.&lt;/p&gt;
+                &lt;/footer&gt;
+            </pre>
+        </code>
+
+<h3>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt; - Tabelas</h3>
+<ul>
+    <li>&lt;table&gt; → define uma tabela</li>
+    <li>&lt;tr&gt; → define uma linha da tabela</li>
+    <li>&lt;th&gt; → define um cabeçalho da tabela</li>
+    <li>&lt;td&gt; → define uma célula da tabela</li>
+</ul>
+
+<h3>Exemplo:</h3>
+<code>
+            <pre>
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Nome&lt;/th&gt;
+                        &lt;th&gt;Idade&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;João&lt;/td&gt;
+                        &lt;td&gt;25&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            </pre>
+        </code>
+
+<h3>&lt;pre&gt; e &lt;code&gt; - Código/Texto preservado</h3>
+<ul>
+    <li>&lt;pre&gt; → mantém espaços e quebras de linha</li>
+    <li>&lt;code&gt; → indica que o texto é código ou algo a destacar</li>
+</ul>
+
+<h3>Exemplo:</h3>
+<code>
+            <pre>
+                &lt;pre&gt;
+                    &lt;code&gt;
+                        h1 {
+                            color: blue;
+                        }   
+                    &lt;/code&gt;
+                &lt;/pre&gt;
+            </pre>
+        </code>
+
+<h2>CSS - O que é?</h2>
+<p><b>CSS (Cascading Style Sheets)</b> é a linguagem usada para definir a aparência de uma página web.</p>
+<p>Com CSS você pode mudar:</p>
+<ul>
+    <li>Cor do texto</li>
+    <li>Estilo da fonte</li>
+    <li>Tamanho da fonte</li>
+    <li>Alinhamento do texto</li>
+    <li>Espaçamento entre elementos</li>
+    <li>Posicionamento dos elementos</li>
+    <li>Layout da página</li>
+</ul>
+
+<h3>Exemplo:</h3>
+<code>
+            <pre>
+                h1 {
+                    color: blue;
+                    font-size: 32px;
+                }
+            </pre>
+        </code>
+
+<h2>JavaScript - O que é?</h2>
+<p><b>JavaScript</b> é a linguagem usada para criar interatividade em uma página web como:</p>
+<ul>
+    <li>clicar e acontecer algo</li>
+    <li>validações de formulários</li>
+    <li>mudar texto na tela</li>
+    <li>manipulação do DOM (Document Object Model)</li>
+    <li>criar e manipular elementos dinamicamente</li>
+    <li>criar lógica</li>
+</ul>
+
+<h3>Exemplo:</h3>
+<code>
+            <pre>
+                alert("Olá, mundo!");
+            </pre>
+        </code>
+
+<h2>Resumo para estudo</h2>
+
+<p>Desenvolvimento Web é a área que cria sites e aplicações. O HTML é a estrutura básica, o CSS define o
+    visual/aparência
+    e o JavaScript adiciona interatividade. Para começar bem, é importante dominar as principais tags HTML
+    (títulos, parágrafos, listas, links, imagens e divisões) e as propriedades básicas do CSS (cor, fundo, espaçamento e
+    layout).</p>
+</div>
+</body>
+
+</html>
