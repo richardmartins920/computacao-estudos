@@ -236,26 +236,391 @@
 
         <h2>CSS - O que é?</h2>
         <p><b>CSS (Cascading Style Sheets)</b> é a linguagem usada para definir a aparência de uma página web.</p>
-        <p>Com CSS você pode mudar:</p>
-        <ul>
-            <li>Cor do texto</li>
-            <li>Estilo da fonte</li>
-            <li>Tamanho da fonte</li>
-            <li>Alinhamento do texto</li>
-            <li>Espaçamento entre elementos</li>
-            <li>Posicionamento dos elementos</li>
-            <li>Layout da página</li>
-        </ul>
+        <p>Se o <strong>HTML</strong> é a estrutura(esqueleto), <br> O <strong>CSS</strong> é o visual (cores, tamanhos, espaço, layout).</p>
 
-        <h3>Exemplo:</h3>
+        <p>Sem o CSS o site funciona, mais fica sem estilo e aparência agradável.</p>
+
+        <h2>Como o CSS funciona?</h2>
+        <p>O CSS funciona com regras.</p>
+        <p>Estrutura:</p>
+
+        <pre>
+            <code>
+                seletor {
+                    propriedade: valor;
+                }
+            </code> 
+        </pre>
+
+        <h3>🔹Seletor</h3>
+        <p>Define qual elemento HTML será estilizado.</p>
+
+        <h3>🔹Propriedade</h3>
+        <p>Define o que será alterado (cor, tamanho, espaçamento, etc).</p>
+
+        <h3>🔹Valor</h3>
+        <p>Define como vai ficar o elemento estilizado.</p>
+
+        <h2>Exemplo simples</h2>
         <pre>
             <code>
                 h1 {
-                    color: blue;
-                    font-size: 32px;
+                    color: red;
+                    font-size: 20px;
                 }
             </code>
         </pre>
+
+        <p>Significa:</p>
+        <ul>
+            <li>Todos os h1 ficarão vermelhos</li>
+            <li>Tamanho da fonte será de 20px </li>
+        </ul>
+
+        <h2>Tipos de Seletores</h2>
+
+        <h3>🔹Seletores de Tag</h3>
+        <p>Seleciona todos os elementos com a mesma tag HTML.</p>
+
+        <pre>
+            <code>
+                p {
+                    color: blue;
+                }
+            </code>
+        </pre>
+
+        <p>Todos os <strong>&lt;p&gt;</strong> ficarão azuis</p>
+
+        <h3>🔹Seletores de Classe</h3>
+        <p>Usa um <strong>ponto (.)</strong> antes do nome da classe.</p>
+
+        <pre>
+            <code>
+                .container {
+                    padding: 20px;
+                }
+            </code>
+        </pre>
+
+        <p>Todos os elementos com a classe <strong>container</strong> terão um padding de 20px</p>
+
+        <p>HTML</p>
+        <pre>
+            <code>
+                &lt;div class="container"&gt;&lt;/div&gt;
+            </code>
+        </pre>
+
+        <p>A classe pode ser usada varias vezes.</p>
+
+        <h3>🔹Seletores de ID</h3>
+        <p>Usa um <strong>#</strong> antes do nome do ID.</p>
+
+        <pre>
+            <code>
+                #header {
+                    background-color: gray;
+                }
+            </code>
+        </pre>
+
+        <p>HTML</p>
+        
+        <pre>
+            <code>
+                &lt;div id="header"&gt;&lt;/div&gt;
+            </code>
+        </pre>
+
+        <p>O ID só pode ser usado uma vez por página.</p>
+
+        <h3>🔹Pseudo-classe (:hover)</h3>
+        <p>Aplica estilo quando algo acontece.</p>
+
+        <pre>
+            <code>
+                a:hover {
+                    color: red;
+                }
+            </code>
+        </pre>
+
+        <p>Quando o mouse passar por cima de um link, ele ficará vermelho.</p>
+
+        <h2>Cores do CSS</h2>
+        <p>Existem 3 formas de definir cores no CSS:</p>
+
+        <h3>🔹Nomes de cores</h3>
+
+        <pre>
+            <code>
+                p {
+                    color: red;
+                }
+            </code>
+        </pre>
+
+        <h3>🔹Códigos Hexadecimais</h3>
+
+        <pre>
+            <code>
+                p {
+                    color: #ff0000;
+                }
+            </code>
+        </pre>
+
+        <h3>🔹RGB</h3>
+
+        <pre>
+            <code>
+                p {
+                    color: rgb(255, 0, 0);
+                }
+            </code>
+        </pre>
+
+        <h2>Fontes</h2>
+
+        <h3>🔹Font-family</h3>
+        <p>Define o tipo de letra.</p>
+
+        <pre>
+            <code>
+                p {
+                    font-family: Arial, sans-serif;
+                }
+            </code>
+        </pre>
+
+        <h3>🔹 Font-size</h3>
+        <p>Define o tamanho da fonte.</p>
+
+        <pre>
+            <code>
+                p {
+                    font-size: 16px;
+                }
+            </code>
+        </pre>
+
+        <h3>🔹Font-weight</h3>
+        <p>Define a espessura da fonte.</p>
+
+        <pre>
+            <code>
+                p {
+                    font-weight: bold;
+                }
+            </code>
+        </pre>
+
+        <h2>Espaçamento (Muito importante)</h2>
+
+        <h3>🔹Margin</h3>
+        <p>Define o espaço fora do elemento (entre elementos).</p>
+
+        <pre>
+            <code>
+                p {
+                    margin: 20px;
+                }
+            </code>
+        </pre>
+
+        <h3>🔹Padding</h3>
+        <p>Define o espaço dentro do elemento (entre o conteúdo e a borda).</p>
+
+        <pre>
+            <code>
+                p {
+                    padding: 10px;
+                }
+            </code>
+        </pre>
+
+        <h2>Bordas</h2>
+        <p>As bordas definem a aparência da borda de um elemento.</p>
+
+        <h3>🔹Border</h3>
+        <p>Define a borda de um elemento.</p>
+
+        <pre>
+            <code>
+                p {
+                    border: 1px solid black;
+                }
+            </code>
+        </pre>
+
+        <p>Estrutura:</p>
+        <ul>
+            <li>1px → espessura da borda</li>
+            <li>solid → tipo da borda (pode ser dashed, dotted, etc)</li>
+            <li>black → cor da borda</li>
+        </ul>
+
+        <h3>Border-radius</h3>
+        <p>Arredonda os cantos de um elemento.</p>
+
+        <pre>
+            <code>
+                p {
+                    border-radius: 10px;
+                }
+            </code>
+        </pre>
+
+        <h2>Tamanho</h2>
+
+        <h3>🔹Width e Height</h3>
+        <p>Define a largura e altura de um elemento.</p>
+
+        <pre>
+            <code>
+                p {
+                    width: 200px;
+                    height: 100px;
+                }
+            </code>
+        </pre>
+
+        <h2>Centralização</h2>
+        <p>Forma mais usada para centralizar uma caixa:</p>
+
+        <pre>
+            <code>
+                .container {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            </code>
+        </pre>
+
+        <p><strong>auto</strong> divide o espaço e centraliza.</p>
+
+        <h2>Display</h2>
+        <p>Controla como o elemento aparece.</p>
+
+        <ul>
+            <li>block - ocupa a linha toda</li>
+            <li>inline - ocupa apenas o espaço do conteúdo</li>
+            <li>flex - permite criar layouts modernos</li>
+        </ul>
+
+        <pre>
+            <code>
+                div {
+                    display: flex;
+                }
+            </code>
+        </pre>
+
+        <h2>Box-shadow</h2>
+        <p>Cria sombras em elementos HTML.</p>
+
+        <pre>
+            <code>
+                div {
+                    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+                }
+            </code>
+        </pre>
+
+        <p>Muito usado para criar efeito dee cartão.</p>
+
+        <h2>Position</h2>
+        <p>Controla posicionamento</p>
+        <ul>
+            <li>static (normal)</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+        </ul>
+
+        <pre>
+            <code>
+                div {
+                    position: relative;
+                }
+            </code>
+        </pre>
+
+        <h2>Transition</h2>
+        <p>Cria animação suave.</p>
+
+        <pre>
+            <code>
+                a {
+                    transition: color 0.3s;
+                }
+            </code>
+        </pre>
+
+        <h2>Box model (Modelo de Caixa)</h2>
+        <p>Todo elemento é uma caixa composta por:</p>
+        <ol>
+            <li>Conteúdo</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+        </ol>
+
+        <p>Ordem de dentro para fora:</p>
+        <pre>
+            <code>
+                content → padding → border → margin
+            </code>
+        </pre>
+
+        <h2>Exemplo completo simples</h2>
+        <pre>
+            <code>
+                body {
+                    background-color: #f2f2f2;
+                    font-family: Arial, sans-serif;
+                }
+
+                .container {
+                    width: 80%;
+                    max-width: 900px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background: white;
+                    border-radius: 100px;
+                }
+
+                h1 {
+                    text-aling: center;
+                    background: #333;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 8px;
+                }
+            </code>
+        </pre>
+
+        <h2>Resumo Final para Estudo</h2>
+        <p>CSS é a linguagem responsável pela aparencia do site. <br>Ele funciona através de seletores que alicam 
+        propriedades e valores aos elementos HTML. <br>As propriedades mais importantes para iniciantes são:</p>
+        
+        <ul>
+            <li>color</li>
+            <li>background-color</li>
+            <li>font-size</li>
+            <li>font-family</li>
+            <li>margin</li>
+            <li>padding</li>
+            <li>border</li>
+            <li>border-radius</li>
+            <li>width</li>
+            <li>display</li>
+            <li>box-shadow</li>
+        </ul>
+
+
+        <p>Com isso já é possível criar páginas organizadas, bonitas e profissionais.</p>
 
         <h2>JavaScript - O que é?</h2>
         <p><b>JavaScript</b> é a linguagem usada para criar interatividade em uma página web como:</p>
